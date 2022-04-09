@@ -627,7 +627,7 @@ GameObject:
   - component: {fileID: 264515003}
   m_Layer: 0
   m_Name: white-key-E
-  m_TagString: Untagged
+  m_TagString: key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1352,12 +1352,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Ball: {fileID: 1427204215}
-  KeyTransform:
-  - {fileID: 1731189215}
-  - {fileID: 644553865}
-  - {fileID: 264514998}
-  - {fileID: 1125370768}
-  - {fileID: 497107846}
 --- !u!1 &497107845
 GameObject:
   m_ObjectHideFlags: 0
@@ -1374,7 +1368,7 @@ GameObject:
   - component: {fileID: 497107851}
   m_Layer: 0
   m_Name: white-key-G
-  m_TagString: Untagged
+  m_TagString: key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1720,7 +1714,7 @@ GameObject:
   - component: {fileID: 644553870}
   m_Layer: 0
   m_Name: white-key-D
-  m_TagString: Untagged
+  m_TagString: key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2772,7 +2766,7 @@ GameObject:
   - component: {fileID: 1125370773}
   m_Layer: 0
   m_Name: white-key-F
-  m_TagString: Untagged
+  m_TagString: key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3599,6 +3593,7 @@ GameObject:
   - component: {fileID: 1427204217}
   - component: {fileID: 1427204216}
   - component: {fileID: 1427204220}
+  - component: {fileID: 1427204221}
   m_Layer: 0
   m_Name: ball
   m_TagString: ball
@@ -3676,8 +3671,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1427204215}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.45800012, y: 1.368, z: -0.32000002}
-  m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
+  m_LocalPosition: {x: -0.45800012, y: 1.368, z: -0.535}
+  m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -3698,6 +3693,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1427204221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427204215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e81cbca18b62b4f41a6207deca165b74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PositionForKeys:
+  - {fileID: 1731189215}
+  - {fileID: 644553865}
+  - {fileID: 264514998}
+  - {fileID: 1125370768}
+  - {fileID: 497107846}
 --- !u!1 &1434518830
 GameObject:
   m_ObjectHideFlags: 0
@@ -4367,7 +4380,7 @@ GameObject:
   - component: {fileID: 1731189220}
   m_Layer: 0
   m_Name: white-key-C
-  m_TagString: Untagged
+  m_TagString: key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

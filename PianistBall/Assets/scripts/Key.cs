@@ -21,11 +21,6 @@ public class Key : MonoBehaviour
         {
             return Manager.Instance.levelManager.playindex;
         }
-        set
-        {
-            Manager.Instance.levelManager.playindex = value;
-        }
-        
     }
 
     
@@ -37,9 +32,11 @@ public class Key : MonoBehaviour
         {
             try
             {
-                Manager.Instance.audioManager.PlaySound(Manager.Instance.levelManager.SongIndex(currentnote++));
+                Manager.Instance.audioManager.PlaySound(Manager.Instance.levelManager.SongIndex(currentnote));
                 StartCoroutine("DoAnimation");
-               
+                
+
+
             }
             catch
             {
@@ -55,6 +52,4 @@ public class Key : MonoBehaviour
         transform.DOLocalMoveY(YKey, DelayForAnimation);
     }
 
-  
-    
 }

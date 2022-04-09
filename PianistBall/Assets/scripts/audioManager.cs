@@ -14,5 +14,9 @@ public class audioManager : MonoBehaviour
        
     }
 
-    
+    private void Start()
+    {
+        Time.timeScale = 0.3f;
+    }
+
 }

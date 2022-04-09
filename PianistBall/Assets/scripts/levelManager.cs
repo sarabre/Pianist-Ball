@@ -37,9 +37,11 @@ public class levelManager : MonoBehaviour
 
     #endregion
 
-    public int SongIndex(int index)
+    public int SongIndex(int index) // Method returns note based on the index of letter array 
     {
-         switch (_Song[index])
+        
+
+        switch (_Song[index])
          {
               case 'C':
                     return 0;
@@ -51,21 +53,15 @@ public class levelManager : MonoBehaviour
                     return 2;
 
                 case 'G':
-                    return 3;
+                    return 4;
 
                 default:
                     return 0;
          }
+        
     }
 
-    [SerializeField] private Transform[] KeyTransform;
-    public Transform[] keytrasform
-    {
-        get
-        {
-            return KeyTransform;
-        }
-    }
+    
 
     private int _PlayIndex = 0;
     public int playindex
