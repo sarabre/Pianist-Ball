@@ -11,6 +11,7 @@ public class audioManager : MonoBehaviour
     public void PlaySound(int index)
     {
        Sound[Manager.Instance.levelManager.SongIndex(index)].Play();
+       
     }
 
     
